@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+     agent {
+        label 'my-slave'
+    }
 
     environment {
         IMAGE_NAME = "i27-helpdesk-ui:dev"
